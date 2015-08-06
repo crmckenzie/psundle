@@ -27,12 +27,13 @@ function Install-PsundleModule($owner, $moduleName) {
   $moduleDefinitions = (gci $moduleDir *.psm1)
   if ($moduleDefinitions.Count -eq 0) {
     throw "Could not find any module definitions in $moduleDir. This repository does not appear to be a powershell module."
-    return -1
+    Remove-Item $ModuleDir -force -recurse
+    return
   }
 
   $moduleDefinition = $moduleDefinitions[0].FullName
 
-  $cmd = "Import-Module '$moduleDefinition'"
+  $cmd = "Import-Module '$moduleDefinition' -Global"
   $cmd
   Invoke-expression $cmd
 }
