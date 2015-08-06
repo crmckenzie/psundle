@@ -1,4 +1,16 @@
-function Update-PsModules {
+<#
+  .SYNOPSIS
+  Performs a git pull on all modules in the PsundleModulesDirectory
+
+  .DESCRIPTION
+  Performs a git pull on all modules in the PsundleModulesDirectory
+
+  .EXAMPLE
+  Update-PsundleModules
+#>
+
+function Update-PsundleModules
+{
   $psundleModulesDirectory = Get-PsundleModulesDirectory
 
   write-debug "PsundleModulesDirectory: $PsundleModulesDirectory"

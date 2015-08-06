@@ -1,4 +1,14 @@
-function Install-PsModule($owner, $moduleName) {
+<#
+  .SYNOPSIS
+  Clones the specified module from github into the PsundleModuleDirectory and imports it
+
+  .DESCRIPTION
+  Clones the specified module from github into the PsundleModuleDirectory and imports it
+
+  .EXAMPLE
+  Install-PsundleModule crmckenzie psundle-vsex
+#>
+function Install-PsundleModule($owner, $moduleName) {
   $PsundleModuleDirectory = Get-PsundleModulesDirectory
 
   $moduleDir = "$PsundleModuleDirectory/$owner/$moduleName"

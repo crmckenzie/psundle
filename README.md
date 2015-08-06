@@ -5,6 +5,18 @@ Psundle will automatically load psundle modules when psundle itself is loaded in
 
 Psundle is _dumb_, meaning it cannot distinguish github repos which are powershell modules from other repos. You must exercise due dilligence and make sure you are installing valid and trusted powershell modules.
 
+## What's wrong with PsGet?
+
+Nothing. [PsGet](http://psget.net/) is great. However, not every powershell module can be made public, and not every powershell module developer goes through the process of registering their modules at PsGet. Psundle bypasses all of that and lets you install any powershell module you like as long as it's hosted on github.
+
+## The Future of Psundle
+
+If there is interest in Psundle, I'd like to add
+
+* support for alternative source control systems
+* support selecting specific versions of the module by release or commit
+* one-step installation script
+
 #Dependencies
 
 **git** must be installed and available in `$env:PATH`
@@ -21,7 +33,7 @@ In your powershell profile, make sure you `Import-Module Psundle`. Your powershe
 ## Installing a module
 
 ```powershell
-Install-PsModule "owner" "repo"
+Install-PsundleModule "owner" "repo"
 ```
 
 This command is equivalent to
