@@ -43,3 +43,12 @@ git clone http://github.com/owner/repo.git "$home/Documents/WindowsPowershell/Mo
 
 Import-Module "$home/Documents/WindowsPowershell/Modules/.psundle/repo/repo.psm1" -Global
 ```
+
+## Example Powershell Modules
+
+For examples of powershell modules that are compatible with Psundle, see
+
+| Module | Description |
+| ------ | ----------- |
+|[ChefDk](http://github.com/crmckenzie/psundle-chefdk)|Powershell Tools for ChefDk|
+|[VSCX](http://github.com/crmckenzie/psundle-vscx)|Visual Studio Community Extensions for Powershell|
