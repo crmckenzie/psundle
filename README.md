@@ -51,4 +51,5 @@ For examples of powershell modules that are compatible with Psundle, see
 | Module | Description |
 | ------ | ----------- |
 |[ChefDk](http://github.com/crmckenzie/psundle-chefdk)|Powershell Tools for ChefDk|
+|[Ruby](http://github.com/crmckenzie/psundle-ruby)|Ruby tools (including version switcher) for Windows|
 |[VSCX](http://github.com/crmckenzie/psundle-vscx)|Visual Studio Community Extensions for Powershell|
