@@ -7,9 +7,9 @@ Psundle is _dumb_, meaning it cannot distinguish github repos which are powershe
 
 ## Installation
 
-'''powershell
+```powershell
 iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/crmckenzie/psundle/master/tools/install.ps1'))
-'''
+```
 
 ## What's wrong with PsGet?
 
