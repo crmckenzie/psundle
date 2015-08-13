@@ -5,10 +5,19 @@
   .DESCRIPTION
   Clones the specified module from github into the PsundleModuleDirectory and imports it
 
+  .PARAMETER owner
+  The owner of the module.
+
+  .PARAMETER name
+  The name of the github repo the module is stored in.
+  
   .EXAMPLE
   Install-PsundleModule crmckenzie psundle-vsex
 #>
-function Install-PsundleModule($owner, $moduleName) {
+function Install-PsundleModule(
+  [Parameter(Mandatory=$true)][string] $owner,
+  [Parameter(Mandatory=$true)][string] $moduleName
+) {
   $PsundleModuleDirectory = Get-PsundleModulesDirectory
 
   $moduleDir = "$PsundleModuleDirectory/$owner/$moduleName"
