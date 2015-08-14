@@ -1,4 +1,4 @@
-# PSUNDLE - The 'P' is silent cuz' it's _fancy_!
+# PSUNDLE - The 'P' is silent 'cuz it's _fancy_!
 
 Psundle is a powershell implementation of a package manager similar to Vundle. Psundle uses github as the repository for powershell modules.
 Psundle will automatically load psundle modules when psundle itself is loaded into a powershell session.
