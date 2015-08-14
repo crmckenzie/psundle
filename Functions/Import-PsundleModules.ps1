@@ -6,5 +6,6 @@
   Imports all modules found in the PsundleModulesDirectory into the Global session.
 #>
 function Import-PsundleModules(){
-  Get-PsundleModules | Import-Module -Global
+  $modules = Get-PsundleModules
+  $modules | Import-Module -Global
 }
