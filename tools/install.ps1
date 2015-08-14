@@ -2,7 +2,7 @@ try
 {
   $repository = "https://github.com/crmckenzie/psundle.git"
 
-  $modulesDirectory = ($env:PsModulePath.Split(';') | where {$_.contains($home)})
+  $modulesDirectory = ($env:PsModulePath.Split(';') | where {$_.contains($env:UserProfile)})
 
   $psundleDirectory = Join-Path $modulesDirectory "Psundle"
 
