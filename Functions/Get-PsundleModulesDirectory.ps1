@@ -7,7 +7,7 @@
 #>
 function Get-PsundleModulesDirectory{
   write-debug "Get-PsundleModulesDirectory Invoked"
-  $modulesPath = $env:PsModulePath.Split(';') | where {$_.Contains($home)}
+  $modulesPath = $env:PsModulePath.Split(';') | where {$_.Contains($env:UserProfile)}
   $psundleModules = "$modulesPath/.psundle"
   return $psundleModules
 }
